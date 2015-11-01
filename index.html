@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1.0, maximum-scale=1.0”>	
+	<meta name="format-detection" content="telephone=no">
+	
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+	<title>MadLibs</title>
+
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="js/angular.min.js"></script>
+</head>
+<body ng-init="femaleName = 'Nati'; jobTitle = 'WebDesigner'; dirtyTask = 'edit Pictures in Photoshop'; tediousTask = 'AfterFX Animations'; celebrity='Nev'; uselessSkill = 'scratch the head'; adjective='stupendous'; hugeNumber = '4'; obnoxiuousCelbertity='Dude';">
+	<div class="wrapper">
+		<header>
+			<div class="smiley">
+				<img src="img/smiley.png" alt="">
+			</div>
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+		</header>
+
+		<section class="inputs">
+			<h2>Provide the following words:</h2>
+			<div class="flexi">
+				<div class="flexi-row">
+					<input type="text" ng-model="femaleName" placeholder="Female Name"><br/>
+					<input type="text" ng-model="jobTitle" placeholder="Job Title"><br/>
+					<input type="text" ng-model="dirtyTask" placeholder="Dirty Task">
+				</div>
+				<div class="flexi-row">
+					<input type="text" ng-model="tediousTask" placeholder="Tedious Task"><br/>
+					<input type="text" ng-model="celebrity" placeholder="Celebrity"><br/>
+					<input type="text" ng-model="uselessSkill" placeholder="useless Skill">
+				</div>
+				<div class="flexi-row">
+					<input type="text" ng-model="adjective" placeholder="adjective"><br/>
+					<input type="text" ng-model="hugeNumber" placeholder="huge Number"><br/>
+					<input type="text" ng-model="obnoxiuousCelbertity" placeholder="obnoxious Celebrity">
+				</div>
+			</div>
+
+		</section>
+
+		<section class="text">
+			<p>
+				{{femaleName}} was a {{jobTitle}} who loved technology. Although she loved parts of her job, she absolutely hated  {{tediousTask}} and {{dirtyTask}}. So, {{femaleName}} met with her life mentor {{celebrity}} who told her to learn how to {{uselessSkill}} with Thinkful. Thinkful didn't offer a course on {{uselessSkill}} so she studied programming instead.
+			</p>
+ 			<p>
+				What a great decision! With her new skills, {{femaleName}} built a(n) {{adjective}} robot named {{obnoxiuousCelbertity}} that not only loved to {{dirtyTask}} but did it {{hugeNumber}} times faster.
+			</p>
+		</section>
+	</div>
+	
+	
+</body>
+</html>
